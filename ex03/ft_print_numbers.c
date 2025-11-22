@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fshoshin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/21 17:21:06 by fshoshin          #+#    #+#             */
-/*   Updated: 2025/11/21 17:24:47 by fshoshin         ###   ########.fr       */
+/*   Created: 2025/11/21 16:39:33 by fshoshin          #+#    #+#             */
+/*   Updated: 2025/11/21 17:08:42 by fshoshin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_alphabet(void)
+void	ft_print_numbers(void)
 {
 	int	i;
 
-	i = 97;
-	while (i <= 122)
+	i = 48;
+	while (i <= 57)
 	{
-		write(1, &i, 1);
+		write (1, &i, 1);
 		i++;
 	}
 }

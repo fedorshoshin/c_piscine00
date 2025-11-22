@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fshoshin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/21 17:21:06 by fshoshin          #+#    #+#             */
-/*   Updated: 2025/11/21 17:24:47 by fshoshin         ###   ########.fr       */
+/*   Created: 2025/11/22 21:01:39 by fshoshin          #+#    #+#             */
+/*   Updated: 2025/11/22 21:21:55 by fshoshin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_alphabet(void)
+void	ft_print_reverse_alphabet(void)
 {
 	int	i;
 
-	i = 97;
-	while (i <= 122)
+	i = 122;
+	while (i >= 97)
 	{
 		write(1, &i, 1);
-		i++;
+		i--;
 	}
 }
